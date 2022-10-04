@@ -1,0 +1,24 @@
+GET http://localhost:4000/todos
+
+###
+POST http://localhost:4000/todo/new
+Content-Type: application/json
+
+{
+    "activity":"goto bed",
+    "date":"2022-09-27"
+}
+
+###
+DELETE http://localhost:4000/todo/delete/6332affea6b3f9118e21b0c0
+
+###
+GET http://localhost:4000/todo/complete/6332b2179554e176c14bed10
+
+###
+PUT http://localhost:4000/todo/63344ca14eba7bd8f3d686be/update
+Content-Type: application/json
+
+{
+    "activity":"buy watch"
+}
